@@ -1,0 +1,15 @@
+name: Onboard repos
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    onboard:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Load repositories.json to output
+              id: load_repos
+              run: |
+                echo "repositories=$(cat repositories.json)" >> $GITHUB_OUTPUT

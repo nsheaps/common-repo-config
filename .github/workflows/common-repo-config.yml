@@ -1,0 +1,7 @@
+name: Maintained by common repo config
+on:
+  push: {}
+
+jobs:
+  fake:
+    uses: nsheaps/common-repo-config@main/.github/workflows/_beacon.yml

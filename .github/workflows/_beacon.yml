@@ -1,0 +1,11 @@
+name: Used to maintain reference on common-repo-config, not copied to repos, reusable workflow
+on:
+  workflow_call: {}
+jobs:
+  fake:
+    runs-on: ubuntu-latest
+    if: ${{ false }}
+    steps:
+      - name: Fake
+        run: echo "Fake"
+
