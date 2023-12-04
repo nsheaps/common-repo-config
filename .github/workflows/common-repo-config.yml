@@ -4,4 +4,4 @@ on:
 
 jobs:
   fake:
-    uses: nsheaps/common-repo-config@main/.github/workflows/_beacon.yml
+    uses: nsheaps/common-repo-config/.github/workflows/_beacon.yml@main
